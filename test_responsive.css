@@ -1,0 +1,34 @@
+/*paragraphe en bleu par défaur */
+#salutation{
+    color : blue;
+
+}
+
+img{
+     width : 50%;
+     
+     min-width: 400px;
+
+}
+
+#mon_paragraphe{
+
+
+    width: 330px;
+    height:  110px;
+    text-align: justify;
+    border: 1px solid black;
+    overflow: auto
+    
+}
+
+/*Nouvelles règles si la fenêtre fait au plus 1024px de large*/
+@media screen and (max-width: 1024px){
+
+    #salutation{
+        color: red;
+        background-color: black;
+        font-size :1.2em;
+
+    }
+}

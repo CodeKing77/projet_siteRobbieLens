@@ -1,0 +1,250 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1f2039;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+}
+
+nav {
+    float: right;
+    width: 20%;
+    margin-top: 0.8rem;
+}
+
+nav ol {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ol li a:hover {
+    text-decoration: underline;
+}
+
+main article {
+    background-color: #1f2039;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main article #intro {
+    width: 30%;
+    margin-top: 4rem;
+}
+
+main article #intro > h1 {
+    font-size: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #a5b4fc;
+}
+
+main article #intro > h1 + p {
+    margin-top: 0.8rem;
+}
+
+main article #intro > h1 + p em {
+    font-style: normal;
+    color: #a5b4fc;
+}
+
+main article #intro #bouton_clique {
+    border: 2px solid #acaeed;
+    margin-top: 2.5rem;
+    border-radius: 50px;
+    width: 45%;
+    text-align: center;
+    padding: 0.8rem 0.4rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: #acaeed;
+    cursor: pointer;
+}
+
+main article #intro #bouton_clique a {
+    text-decoration: none;
+}
+
+main article #bloc_photo_robbie {
+    margin-top: 4rem;
+    margin-left: -35rem;
+}
+
+section {
+    background-color: white;
+}
+
+main section > h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+section > #image_wrapper {
+    width: 66%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+main section #bloc_form {
+    background-color: #1f2039;
+    color: white;
+}
+
+main section #bloc_form > h2 {
+    color: #a5b4fc;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3.5rem;
+}
+
+main section #bloc_form form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper_nom_email {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bloc_message {
+    margin-top: 1.5rem;
+    margin-left: 4.5rem;
+}
+
+a[href="lien_soumission"] {
+    margin: auto;
+    margin-top: 2rem;
+    width: 20%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 0.8rem 0.4rem;
+    background-color: #acaeed;
+    border: 1px solid #acaeed;
+}
+
+a[href="lien_soumission"] > input {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+footer {
+    display: flex;
+    margin-top: 2rem;
+    border: 2px solid white;
+    background-color: white;
+    padding-top: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bloc_image_icon {
+    display: flex;
+    border: 1px solid transparent;
+    width: 8%;
+    justify-content: space-between;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    nav ol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main article #intro {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    main article #intro > h1 {
+        font-size: 2.5em;
+    }
+
+    main article #bloc_photo_robbie {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    section > #image_wrapper {
+        width: 80%;
+    }
+
+    main section #bloc_form form {
+        width: 80%;
+    }
+
+    #wrapper_nom_email {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloc_message {
+        margin-left: 0;
+    }
+
+    a[href="lien_soumission"] {
+        width: 40%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloc_image_icon {
+        width: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    main article #intro > h1 {
+        font-size: 2em;
+    }
+
+    main article #intro #bouton_clique {
+        width: 60%;
+    }
+
+    a[href="lien_soumission"] {
+        width: 60%;
+    }
+
+    .bloc_image_icon {
+        width: 30%;
+    }
+}

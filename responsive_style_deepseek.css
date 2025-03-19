@@ -1,0 +1,215 @@
+/* Responsive Design */
+/* Styles de base pour les petits écrans (mobile-first) */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+header img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+nav ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ol li {
+    margin: 10px 0;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+#bouton_clique a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#bloc_photo_robbie img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#image_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bloc1_image, .bloc2_image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bloc1_image img, .bloc2_image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#bloc_form {
+    margin-top: 20px;
+}
+
+#wrapper_nom_email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bloc_nom, .bloc_email, .bloc_message {
+    width: 100%;
+}
+
+.bloc_message textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.bloc_image_icon {
+    display: flex;
+    gap: 10px;
+}
+
+.bloc_image_icon img {
+    max-width: 30px;
+    height: auto;
+}
+
+/* Styles pour les écrans moyens (tablettes) */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    nav ol {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #presentation {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #intro {
+        max-width: 50%;
+    }
+
+    #bloc_photo_robbie {
+        max-width: 40%;
+    }
+
+    #image_wrapper {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .bloc1_image, .bloc2_image {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #wrapper_nom_email {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .bloc_nom, .bloc_email {
+        width: 48%;
+    }
+}
+
+/* Styles pour les grands écrans (desktop) */
+@media (min-width: 1024px) {
+    header {
+        padding: 20px 60px;
+    }
+
+    #presentation {
+        padding: 40px;
+    }
+
+    #intro h1 {
+        font-size: 2.5em;
+    }
+
+    #intro p {
+        font-size: 1.2em;
+    }
+
+    #bloc_form {
+        max-width: 800px;
+        margin: 40px auto;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 60px;
+    }
+}
